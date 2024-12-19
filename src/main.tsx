@@ -9,14 +9,15 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <BrowserRouter basename="/Notes/">
-          <Routes>
-              <Route path="*" element={<App/>} />
-          </Routes>
+      <h1>hello</h1>
+      {/*<BrowserRouter basename="/Notes/">*/}
+      {/*    <Routes>*/}
+      {/*        <Route path="*" element={<App/>} />*/}
+      {/*    </Routes>*/}
 
-      </BrowserRouter>
+      {/*</BrowserRouter>*/}
 
-    {/*<App />*/}
+      {/*<App />*/}
       {/*<NotesPage />*/}
   </StrictMode>,
 )
