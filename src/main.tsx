@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')!).render(
               <Route path="*" element={<App/>} />
           </Routes>
 
-      </BrowserRouter>pm start
+      </BrowserRouter>
 
     {/*<App />*/}
       {/*<NotesPage />*/}
