@@ -4,7 +4,7 @@ import './index.css'
 // import { BrowserRouter, Routers, Route } from "react-router-dom"
 // import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 //
-// import App from './App.tsx'
+import App from './App.tsx'
 // import NotesPage from "./notes/NotesPage.tsx";
 
 createRoot(document.getElementById('root')!).render(
@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')!).render(
 
       {/*</BrowserRouter>*/}
 
-      {/*<App />*/}
+      <App />
       {/*<NotesPage />*/}
   </StrictMode>,
 )
