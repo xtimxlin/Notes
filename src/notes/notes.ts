@@ -2,10 +2,22 @@ export const notes = [
     { header: 'Questions',
         detail: 'Overall interview Process and the timeline to onboard this position\n' +
             'Can you tell me about the team structure?\n' +
+
             'what are the most critical skills you are looking for in an ideal candidate? \n' +
-            'when can I expect to hear back? \n' +
-            'What is the team’s expectation on this role?\n' +
+            'what are the top priorities for the QA team in the next 3 to 6 months?\n'+
+            'What is the team’s expectation on this role? (first 30 60 and 90 days)\n' +
+
             'What challenge that this role might face \n' +
+            'How do you currently handle the balance between manual and automated testing? Are there specific areas where you expect more automation?\n'+
+            'Can you tell me more about how the QA team collaborates with the engineering and data science teams?\n'+
+            'What are some of the biggest challenges the QA team is currently facing?\n'+
+            'What do you enjoy most about working at EvolutionIQ, and what do you see as the biggest opportunity for the company in the next year?\n'+
+            '\n'+
+            ''+
+            ''+
+
+            'when can I expect to hear back? \n' +
+
             'I really appreciate the opportunity to interview. I’m not sure if we’ll connect again, but before we wrap up, could you share any feedback on how I could better prepare for interviews in the future?\n' +
             'Do you have any concerns about my qualifications for this job?\n' },
     { header: 'Self Intro',
@@ -603,7 +615,36 @@ export const notes = [
             '\n' +
             '### 3. **Fluent Waits:**\n' +
             '* Combining explicit and implicit waits for more flexible control.\n' },
-    { header: 'Header', detail: 'Detail' },
+    { header: 'Contract Testing', detail: 'Contract testing is a type of testing that ensures the communication between two services (like microservices) works as expected. It checks that both parties (the provider and the consumer) agree on how they will interact. In simpler terms, it verifies that the service providing data sends what the service requesting data expects to receive.\n' +
+            'Key Features of Contract Testing:\n' +
+            'Consumer-Driven: Contract testing is often driven by the consumer\'s needs. The consumer defines what they expect from the provider.\n' +
+            'Contracts: A "contract" is like an agreement. It describes the expected input (request) and output (response) between services. If both sides follow this contract, they should work well together.\n' +
+            'Isolation: Contract testing can be done in isolation, meaning you can test the consumer and provider independently. This is useful when one service is not yet fully developed.\n' +
+            'Fast Feedback: It provides quick feedback when changes are made, helping to catch issues early before they reach production.' },
+    { header: 'Integration Testing', detail: 'Integration testing is the process of testing how different components or services work together as a whole. It checks whether the integrated parts of an application interact correctly and identify any issues that arise when they are combined.\n' +
+            'Key Features of Integration Testing:\n' +
+            'Whole System Testing: Integration testing focuses on the interactions between various components, features, or systems. It tests the complete flow of data and behavior.\n' +
+            'Environment Setup: This type of testing usually requires a specific environment where all components are set up and can interact with each other.\n' +
+            'Detects Interface Issues: Integration testing is useful for finding problems that occur at the interfaces between components, such as data mismatches or communication failures.\n' +
+            'End-to-End Scenarios: It often involves running end-to-end scenarios to ensure the entire system works as intended.' },
+    { header: 'Contract vs integration testing', detail: 'Focus\n' +
+            'Contract Testing: Verifies the interactions between a consumer and provider based on a contract.\n' +
+            'Integration TestingTests how different components or services work together as a whole.\n' +
+            '\n' +
+            'Level of Testing\n' +
+            'Contract Testing: More granular, focusing on specific interactions.\n' +
+            'Broader, focusing on complete workflows.\n' +
+            '\n' +
+            'Isolation\n' +
+            'Contract Testing: Can be done independently without needing the other service to be fully functional.\t\n' +
+            'Integration TestingIntegration TestingRequires all components to be set up and integrated.\n' +
+            '\n' +
+            'Purpose\t\n' +
+            'Contract Testing: Ensures both parties agree on the data exchange and Integration Testingcommunication.\tDetects issues in the integration of various parts of the application.\n' +
+            '\n' +
+            'Development Stage\n' +
+            'Contract Testing: Often used during development to catch issues early.\n' +
+            'Integration TestingUsed after components are developed to ensure they work together properly.' },
     { header: 'Header', detail: 'Detail' },
 
     { header: '算法面试注意事项', detail: '上来不要直接去做题!!!一定要问清楚题目要求!!!\n' +
