@@ -191,7 +191,185 @@ export const notes = [
             'Solution: Focus on testing the most important and risky parts first.\n'
     },
 
-    { header: 'Header', detail: 'Detail' },
+    { header: 'Common Issue in Manual Testing', detail: 'Human Error: Problem: Testers can make mistakes or forget steps.\n' +
+          'Example: Missing a test step or writing the wrong result.\n' +
+          'Solution: Write clear steps to follow (test cases).\n' +
+          'Double-check your work or ask someone else to review it.\n' +
+
+          '\nsome bug are not able to reproduce: Testers find a bug but can’t recreate it later.\n' +
+          'Example: A crash happens once but doesn’t happen again.\n' +
+          'Solution: Write down the exact steps to create the bug, Test on different devices or browsers to see if the issue repeats.\n' +
+
+
+          '\nProblem: The system for testing doesn’t work properly for Example: The server is down or deployment time\n' +
+          'Solution: work with the platform team, asn them to provide detail timeline in the future' +
+
+          '\nTime-Consuming Processes: Manual testing can be very time-consuming, especially for large applications with many features. Testers spend significant time executing test cases and documenting results.\n' +
+          'Impact: This can lead to tight deadlines, making it challenging to perform thorough testing.\n' +
+          '\nLack of Reusability: Each time a new version of the application is released, testers may need to start from scratch or modify existing cases extensively.\n' +
+          'Impact: This results in wasted effort and can slow down the testing process.'},
+
+    { header: 'how to do manual testing', detail: '1. Understand the Requirements: Read the project documents or user stories to understand how the app should work.\n' +
+          'Ask questions if something is unclear.\n' +
+          'Example: If testing a login page, understand what happens when the username or password is wrong.\n' +
+
+          '\nPrepare Test Cases: Write clear test cases with steps, expected results, and inputs.\n' +
+          'Cover all scenarios: normal cases, edge cases, and negative cases.\n' +
+          'Example:\n' +
+          'Test Case: Enter valid username and password → Expected Result: User logs in.\n' +
+          'Test Case: Leave the username empty → Expected Result: Error message shows.\n' +
+
+          '\nSet Up the Test Environment,\n' +
+          'Make sure the system or app is ready for testing. and use the latest code provied by developer\n' +
+          'Check if the test environment matches the real user environment (e.g., browser, device).\n' +
+          'Example: Test a mobile app on Android and iOS devices.\n' +
+
+          '\nExecute Test Cases: Follow the steps in your test cases one by one.\n' +
+          'Compare the actual results with the expected results.\n' +
+          'Example: Enter the username and password, click "Login," and check if it works as expected.\n' +
+
+          '\nRecord Results: Write down whether each test passed or failed.\n' +
+          'Include details like screenshots or steps if the test failed.\n' +
+          'Example: Write “Login test failed because the system crashed” and attach a screenshot.\n' +
+
+          '\nReport Bugs: Report any issues you find in a bug tracking tool like Jira or testrail.\n' +
+          'Include details: Steps to reproduce the bug., Screenshots or videos.\n' +
+          'Example:\n' +
+          'Bug Description: "The login button doesn’t work."\n' +
+          'Steps: "Click the login button after entering valid credentials."\n' +
+
+          '\nRetest Fixed Bugs: After developers fix the bugs, test them again to ensure the issue is resolved.\n' +
+          'Check that the fix doesn’t cause new bugs.\n' +
+          'Example: If the login button bug is fixed, retest it and check other buttons on the page too.\n' +
+
+
+          '\nCreate a Test Report: Summarize the testing process and results.\n' +
+          'Include: Total tests run, Number of passed and failed tests, and List of bugs.\n' +
+          'Example: “We tested 20 cases, 15 passed, 5 failed. 3 critical bugs were found.”\n' +
+
+          '\nFollow Best Practices\n' +
+          'Stay organized and write detailed test cases.\n' +
+          'Always communicate clearly with your team.\n' +
+          'Test like a real user: think of different ways people might use the app.\n' },
+
+    { header: 'Common Issue in Automation Testing', detail: 'Test Script Maintenance: Automated test scripts break when the application changes.\n' +
+          'Example: A button’s ID changes, and the test can’t find it.\n' +
+          'Solution: Use dynamic locators like XPath or CSS selectors.\n' +
+          'Update test scripts regularly as part of development cycle.\n' +
+
+          '\nFlaky Tests: Tests fail sometimes and pass other times without any changes.\n' +
+          'Example: A test fails due to timing issues, like a page loading slowly.\n' +
+          'Solution: add retry config, Add waits (e.g., explicit waits) to ensure elements are ready.\n' +
+          'Use stable environments for testing.\n' +
+
+
+          '\nTool Limitations: The automation tool may not support some features.\n' +
+          'Example: A tool can’t test mobile apps or advanced UI components.\n' +
+          'Solution: Research and choose the right tool for your project (e.g., Appium for mobile, Selenium for web).\n' +
+          'Use plugins or integrate multiple tools if necessary.\n' +
+
+          '\nmaintain/setup Test Data: need to maintain or create Tests data\n' +
+          'Solution: Use scripts to generate test data dynamically.\n' +
+          'Save reusable data in a shared location for easy access.\n' +
+
+          '\nDifficulty in Testing Dynamic Elements: Some UI elements, animations, are hard to test.\n' +
+          'Solution: Use advanced locators or strategies like waiting for the element to become visible.\n' +
+          'Work with developers to make UI elements more testable.\n' +
+
+          '\nIntegration with CI/CD: Automated tests don’t run smoothly with continuous integration tools.\n' +
+          'Solution: Integrate automation with CI/CD tools like Jenkins, GitHub Actions, or Azure DevOps.\n' +
+          'Fix any environment issues before running the tests.\n' +
+
+          '\nLimited Scope of Automation: Not all tests can be automated, especially those requiring human judgment or exploratory testing. Automation works best for repetitive tasks and stable functions.\n' +
+          'Impact: This means that manual testing is still necessary.\n'+
+
+          '\nAutomation script will not be available in code deployment time or system downtime'+
+          'this will impact for both automation and manual test'+
+
+          '\nBrowser/Platform Compatibility Issues: Automated tests fail on some browsers or devices.\n' +
+          'Solution: Use cross-browser testing tools like BrowserStack or Sauce Labs.\n' +
+          'Run tests in parallel on multiple platforms.' },
+
+
+    { header: 'how to do automation test', detail: 'Understand What to Automate: Identify tests that take a lot of time if done manually.\n' +
+          'Focus on repetitive tests, regression tests, and tests for critical functions.\n' +
+          'Example: Automate login functionality and repetitive form submissions.\n' +
+
+
+          '\nSet Up the Environment: set up config using docker to pull the image or code and build the application\n' +
+          '\nset up testing framework using whatever best fit for the needs\n' +
+
+          '\nDesign Test Scripts: Write scripts for your test cases using the automation tool.\n' +
+          'follow coding stander (single use pricial)'+
+
+
+          '\nRun Test Scripts: Execute the scripts and monitor the results.\n' +
+          'Run tests in different environments (browsers, devices) to ensure compatibility.\n' +
+          'Example: Run the login test on Chrome, Firefox, and Edge.\n' +
+
+          '\nAnalyze Results: Check if all tests passed.\n' +
+          'If a test fails, look at the error logs to find the issue.\n' +
+          'Example: If a login test fails, the log might show "Element not found," meaning the locator is wrong.\n' +
+
+          '\nMaintain and Update Scripts: Update scripts when the application changes (e.g., UI updates).\n' +
+          'Regularly check and fix broken tests to avoid failures.\n' +
+          'Example: If a button ID changes from "loginButton" to "submitButton," update the script.\n' +
+
+
+          '\nIntegrate with CI/CD Tools: Set up automated tests to run after every code change.\n' +
+          'Use tools like Jenkins, GitHub Actions, or Azure DevOps.\n' +
+          'Example: Run automated tests automatically when developers push code to GitHub.\n' +
+
+          '\nGenerate Reports: Create detailed test reports showing which tests passed or failed.\n' +
+          'Use built-in reporting tools or plugins.\n' +
+          'Example: Tools like TestNG or ExtentReports can generate HTML reports for better tracking.\n' +
+
+          'Optimize and Expand Automation: Add more test cases to your automation suite.\n' +
+          'Optimize scripts to run faster and cover more scenarios.\n' +
+          'Example: Add tests for new features like "Forgot Password" or "User Registration."\n' +
+
+          '\nBest Practices for Automation Testing\n' +
+          'Start with simple tests before automating complex ones.\n' +
+          'Write clean and reusable scripts for future use.\n' +
+          'Use version control tools (like Git) to manage your scripts.\n' +
+          'Combine manual and automation testing to achieve the best results.' },
+
+
+
+    { header: 'what test to automate', detail: 'Automate repeat Tasks\n' +
+          'Why? These tasks take a lot of time if done manually, and the steps are the same every time.\n' +
+          'Examples: Login tests, Filling out forms repeatedly, Regression tests after every code change.\n' +
+
+          '\nAutomate High-Risk Areas\n' +
+          'or Prioritize Based on ROI (Return on Investment) Automating key functionalities used by most users.'+
+          'Why? These areas are critical to the application and can cause major problems if they fail.\n' +
+          'Examples: User account creation and authentication, Key business logic, like calculations the total cost\n' +
+
+
+          '\nAutomate Tests That Run Often\n' +
+          'Why? Tests that need to be repeated after every update or in every environment save the most time when automated.\n' +
+          'Examples:\n' +
+          'Smoke tests to check if the basic functions work.\n' +
+          'Regression tests to ensure new changes don’t break existing features.\n' +
+
+          '\nAutomate Tests with Large Data Sets\n' +
+          'Why? It’s difficult and time-consuming to manually test with many inputs or large datasets.\n' +
+          'Examples:\n' +
+          'Testing a search feature with hundreds of search terms.\n' +
+          'Validating file uploads or bulk data processing.\n' +
+
+          '\nAutomate Stable Features\n' +
+          'Why? Features that don’t change often are ideal for automation because the scripts won’t need frequent updates.\n' +
+          'Examples:\n' +
+          'APIs with a fixed contract.\n' +
+          'Backend services that perform consistent operations.\n' +
+
+          '\nAvoid Automating These for Now\n' +
+          'Why? Some tests are better done manually because automation isn’t practical or cost-effective.\n' +
+          'Examples:\n' +
+          'Exploratory Testing: Testing new features where creativity is needed.\n' +
+          'Usability Testing: Checking the look and feel of the application.\n' +
+          'Unstable Features: New or frequently changing features that will require constant updates to scripts.\n'},
 
 
 
@@ -225,7 +403,7 @@ export const notes = [
             'Isolate the Issue: Break down the problem and check one thing at a time.\n' +
             'Use Logs: Logging is your best friend! Add helpful logs to trace what’s happening in the app.\n' +
             'Ask for Help if Needed: If you’re stuck, ask a teammate or check online forums like Stack Overflow.' },
-    { header: 'Header', detail: 'Detail' },
+
     { header: 'Header', detail: 'Detail' },
     { header: 'Header', detail: 'Detail' },
     { header: 'Header', detail: 'Detail' },
