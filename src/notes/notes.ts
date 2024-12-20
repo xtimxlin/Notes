@@ -45,20 +45,72 @@ export const notes = [
             'Beyond that, I’ve taken online courses on ReactJS and Python Scrapy to improve my web development and data scraping skills. These are becoming increasingly important in QA.\n' +
             '\n'+
             'By learning from others and continuously developing my skills, I stay current with the latest QA practices and tools.\n' },
-    { header: 'How to learn a new tool or technology', detail: 'When I need to learn a new tool or technology quickly, I follow a hands-on approach. Here’s how I tackle it:\n' +
-            '\nUtilize Internal Resources: I start by looking for internal resources, such as documentation, user guides, or training materials provided by the company. I follow these documents step-by-step and take detailed notes, especially on areas that I find unclear or confusing. This helps me create a personal reference guide.\n' +
-            '\nCollaborate with Team Members: If I have questions or need clarification, I seek help from team members who are more experienced with the tool. I might arrange knowledge transfer (KT) sessions with them to discuss specific topics or challenges I’m facing. This collaborative approach allows me to gain insights from their experience.\n' +
-            '\nSet Up Daily Check-Ins: I also set up daily calls or check-ins with knowledgeable team members. During these calls, I discuss any issues I’ve encountered and review the work I’ve done. This not only helps me get immediate feedback but also allows me to learn through discussion and problem-solving.\n' +
-            '\nPractice and Experiment: To solidify my understanding, I practice using the tool as much as possible. I create small projects or test cases where I can apply what I’ve learned. This hands-on experience is invaluable for reinforcing my knowledge.\n' +
-            '\nJoin Online Communities: Additionally, I look for online communities, forums, or user groups related to the tool. Engaging with these communities allows me to learn from others’ experiences and stay updated on best practices.\n' +
-            '\nBy combining these strategies, I can effectively learn new tools and technologies and quickly become proficient in using them.\n' },
-    { header: 'most useful tool in QA process', detail: 'JIRA: I use JIRA to keep track of the progress of features and bugs. It allows me to create detailed tickets for each issue, assign them to team members, and monitor their status throughout the development cycle. This visibility helps ensure that nothing is overlooked and that we can prioritize our work effectively.\n' +
-            '\nJenkins: I rely on Jenkins for continuous integration and continuous deployment (CI/CD). By running Jenkins daily, we can automatically build and test our code. This helps us find bugs early in the development process, reducing the risk of major issues later on.\n' +
-            '\nExcel: I use Excel to write and manage my test cases. It provides a flexible way to organize test scenarios, expected results, and actual outcomes. I also update this information in TestRail, which helps keep our test management organized and accessible to the entire team.\n' +
-            '\nPostman: For manual testing, I use Postman a lot. It allows me to create and run API requests easily, which is important for testing backend services. I also create collections in Postman to organize my tests, making it easier to share them with team members and ensure consistent testing practices.\n' +
-            '\nSelenium: Selenium is a popular tool for automating web applications. It allows testers to write test scripts in different programming languages, making it versatile for various teams. By automating repetitive tasks, Selenium saves time and ensures that tests can be run consistently across different browsers.\n' +
-            '\nTestRail: TestRail is a test case management tool that helps me organize and manage test cases efficiently. It has a user-friendly interface for creating, managing, and tracking test cases and results. This tool is especially useful for keeping a clear overview of testing progress and ensuring that all test cases are executed.\n' +
-            '\n\nExample, when we faced a problem with a new feature that was causing bugs, I used JIRA to create tickets for each bug. This helped the team see what needed to be fixed and who was responsible. We also used Jenkins to run automated tests daily, which helped us catch bugs early. By using these tools together, we were able to resolve the issues quickly and improve the quality of our product.' },
+    { header: 'How to learn a new tool or technology', detail: 'Start with Company Resources\n' +
+            'I begin by looking at available resources, such as documentation, user guides, or training materials provided by the company.\n' +
+            'I follow these step-by-step and take notes, especially on parts I find difficult or unclear.\n' +
+            'This helps me create my own quick reference guide for future use.\n' +
+            '\nWatch Tutorials and Videos\n' +
+            'I use online tutorials or video courses to see how experts use the tool.\n' +
+            'Watching demos helps me understand the tool what and how it works.\n' +
+            'Platforms like YouTube or Udemy often have helpful content.\n' +
+            '\nAsk Team Members for Help\n' +
+            'I talk to team members who have experience with the tool to ask questions or clarify my doubts.\n' +
+            'Sometimes, I arrange knowledge transfer (KT) sessions to discuss specific topics or challenges.\n' +
+            'Learning from their experience saves time and helps me avoid common mistakes.\n' +
+            '\nHave Regular Check-Ins\n' +
+            'I set up regular calls or check-ins with knowledgeable colleagues.\n' +
+            'During these sessions, I discuss any issues I face, share my progress, and get immediate feedback.\n' +
+            'This collaborative approach helps me learn faster and stay on the right track.\n' +
+            '\nPractice and Experiment\n' +
+            'I believe the best way to learn is by doing. I practice using the tool as much as possible.\n' +
+            'play around with the tool or work on small task, or debug the code by adding breakpoint try to understand the logic\n' +
+            'This hands-on experience helps me build confidence and makes the learning stick.\n' +
+            '\nTest in Real Scenarios\n' +
+            'Once I’ve learned the basics, I try using the tool on real projects or scenarios.\n' +
+            'This helps me understand how it performs in real situations and highlights areas where I need more practice.\n' +
+            '\nDocument What I Learn\n' +
+            'I create my own notes, cheat sheets, or guides while learning.\n' +
+            'Writing things down not only helps me remember but also allows me to share knowledge with others later.\n' +
+            'This can be useful for onboarding new team members in the future.\n' +
+            '\nStay Open to Feedback\n' +
+            'I regularly ask for feedback from team members or my manager to ensure I’m using the tool correctly. and i aslo love to see my coworker review my word in github PR and provied feedback\n' +
+            'Their suggestions help me improve and learn faster.'},
+
+    { header: 'most useful tool in QA process', detail: '1. JIRA: Tracking Features and Bugs\n' +
+            'JIRA is my go-to tool for tracking progress.\n' +
+            'I create detailed tickets for each bug or feature, assign them to the right team members, and monitor their status throughout the development process.\n' +
+            'It provides clear visibility into what needs to be done and helps the team prioritize work effectively.\n' +
+            'Example: When we encountered a new feature with multiple bugs, I used JIRA to create tickets for each issue. This allowed the team to track fixes and understand who was responsible for each task.\n' +
+            '\n' +
+            '2. Jenkins: Automating Builds and Tests\n' +
+            'Jenkins helps us with continuous integration and deployment (CI/CD).\n' +
+            'I schedule daily builds and automated tests to catch bugs early in the development cycle.\n' +
+            'This proactive approach reduces the risk of major problems appearing later.\n' +
+            'Example: Using Jenkins to run automated tests daily helped us identify issues quickly during a recent release, improving the product’s stability.\n' +
+            '\n' +
+            '3. TestRail: Managing Test Cases\n' +
+            'TestRail is a great tool for organizing and managing test cases.\n' +
+            'I use it to create, update, and track test scenarios and their results.\n' +
+            'It provides a clear overview of testing progress and ensures that no test cases are missed.\n' +
+            'and i can also config the code to upload all the test result to the platform, and review the result in each sprint to find out the fakly test to enhance\n'+
+            'Example: By using TestRail, I can easily collaborate with the team and keep all test cases accessible in one place.\n' +
+            '\n' +
+            '4. Postman: Testing APIs\n' +
+            'Postman is essential for manual API testing.\n' +
+            'It allows me to create, run, and organize API requests. I also use collections in Postman to group related tests and share them with team members.\n' +
+            'This ensures consistent API testing practices across the team.\n' +
+            'Example: During backend testing, I used Postman collections to verify API responses, making it easier to identify issues and share my work with the team.\n' +
+            '\n' +
+            '5. Selenium: Automating Web Application Tests\n' +
+            'Selenium is my primary tool for automating repetitive web application tests.\n' +
+            'It supports multiple programming languages and browsers, making it flexible for different projects.\n' +
+            'By automating tests, I save time and ensure consistent results across different environments.\n' +
+            'Example: I used Selenium to automate login functionality tests, reducing manual effort and speeding up regression testing.\n' +
+            '\n' +
+            '6. Excel: Writing and Managing Test Cases\n' +
+            'Excel provides a simple and flexible way to organize test scenarios, expected results, and actual outcomes.\n' +
+            'I use Excel to draft my test cases and later update this information in TestRail to maintain proper test management.\n' +
+            'Example: I initially wrote detailed test cases for a feature in Excel before transferring them to TestRail, making it easy to share with the team.' },
     { header: 'QA process in an Agile environment', detail: 'Team Collaboration: I work with team from the beginning of the project to understand the requirements and set goals on product quality. Daily meetings to catch problems early.\n' +
             '\nStart Testing Early: I review requirements, create user stories, and acceptance criteria as early as possible and review it with the team, this will give an idea to the team on what and how i will do testing.\n' +
             '\nFocus on Risks: I prioritize testing based on how important the feature is. This saves time while focusing on critical areas.\n' +
@@ -89,35 +141,38 @@ export const notes = [
             '\nFor promation code relate test we can either request from the merchant for testing propose or use the tools like Honey Chrome extension to search for applicable promotion codes online. This saved us valuable time during testing.\n' +
             '\nRequest additional resource, and divided testing tasks among QA engineers, assigning specific merchants and platforms to each team member.\n' +
             '\nBy following this process, my team successfully completed testing, ensuring that tracking tag’s functionality for holiday season although we not able to test every merchant but we could ensure that our testing had make the most impact.\n' },
-    { header: 'deal with a complex issue or bug', detail: 'I remember a tricky issue during an Ulta Beauty campaign that required careful investigation. On the first day, I noticed the order transition data was lower than expected, which seemed strange.\n' +
-            '\nConfirmed the campaign date on the calendar\n' +
-            '\nLoad the product link to confirm the tracking tag is able to load up on the product page\n' +
-            '\nVerify the order transition on the event table to confirm the tracking tag is working\n' +
-            '\nAfter above step i notice the tacking tag is working as expected, then i suspect some product might not trigger the checkout api call\n' +
-            '\nThen I reach out to the CSM team to get all the campaign products and double check them on the event table by grouping the product by name with the transition count in the past date, and i still don\'t have any idea, the result looks fine\n' +
-            '\nAnd after some back and forth data checking i suspect it might relate to the platform, then i modify the SQL to group by platform and browser, and i notice on IOS with Safari browser data was a lot lower than expected\n' +
-            '\nAnd i start to do the manual checkout on ios and safari, and i see there is not checkout api call after at all\n' +
-            '\nRoot Cause: After identifying the problem, I scheduled a meeting with both our team and the Ulta team. I also created a JIRA ticket with all the details, including steps to reproduce, product links, platforms, browsers, order details, and browser network call.\n' +
-            '\nResolution: During the meeting, the Ulta team confirmed a configuration issue on their end for iOS Safari because they had some other bug related to IOS and Safari. And they fixed it, I retested on all platforms and browsers to confirm the tracking tag was working.\n' +
-            '\n\nDocumenting for the Future:\n' +
-            'I created a guide to help in case a similar bug happens again. It includes:\n' +
-            'Steps to confirm campaign details\n' +
-            'End-to-end testing procedures\n' +
-            'SQL queries for grouping data by platform and browser\n' +
-            'How to gather data for JIRA tickets\n' +
-            'Tips for collaborating with external teams\n' +
-            '\nBy following these steps and working closely with the team, we fixed the issue efficiently.\n' },
+
     { header: 'biggest challenge in QA today', detail: 'I think the biggest challenge in QA today is having too little time for testing. When projects have requirements change on  tight deadlines, testing can feel rushed. This might mean changing test plans without enough time to fully check everything.\n' +
             'To handle this, I focus on these key points:\n' +
             '\nPrioritization: I focus on testing the most important parts of the application first. This ensures that the critical functions are tested even when time is short.\n' +
             '\nClear Communication: I talk openly with developers and product teams about timelines and risks. This helps us plan better and adjust deadlines when possible.\n' +
             '\nAutomation: I use automation for repeated tests. This saves time and allows me to run more tests quickly, covering more areas even under tight schedules.\n' +
             '\nThese strategies help me manage short timelines while still delivering quality results.\n' },
-    { header: 'project requirements change', detail: 'There was a time when I had to change my testing strategy because the project requirements unexpectedly changed.\n' +
-            '\nSituation: We received a new document that outlined changes to the features we were testing. This was unexpected and required us to adapt quickly.\n' +
-            '\nTask: My job was to understand these changes and adjust our testing approach accordingly.\n' +
-            '\nAction: First, I reviewed the document carefully to identify what had changed and took notes on any questions I had. Then, I set up a meeting with the team to confirm the changes and discuss any challenges that the developers or QA might face. We also talked about whether we needed to extend the delivery time due to these changes. After that, I reviewed our test cases and modified them to align with the new requirements, prioritizing the most important tests. I made sure to attend our daily stand-up meetings to keep track of our progress and address any issues that came up.\n' +
-            '\nResult: By taking these steps, we were able to adapt our testing strategy effectively. This helped us stay on track and ensure that the final product met the new requirements without significant delays.\n' },
+    { header: 'project requirements change', detail: '1. Situation\n' +
+            'During a project, we received a new requirements document that introduced changes to the features we were testing.\n' +
+            'The changes were unexpected and required us to adapt quickly to avoid delays.\n' +
+            '\n2. Task\n' +
+            'My responsibility was to understand the new requirements, update our testing approach, and ensure that testing was aligned with the new scope.\n' +
+            'It was also important to communicate with the team to manage expectations and address any risks.\n' +
+            '\n3. Action\n' +
+            'Step 1: Analyze the Changes\n' +
+            'I carefully reviewed the new document to identify all changes and their impact on the features being tested.\n' +
+            'I made a list of questions or areas needing clarification.\n' +
+            '\nStep 2: Collaborate with the Team\n' +
+            'I organized a meeting with the developers, product owners, and other QA members to confirm the changes and clarify my questions.\n' +
+            'During the meeting, we discussed potential challenges and whether the delivery timeline needed to be adjusted.\n' +
+            '\nStep 3: Update Test Cases\n' +
+            'I reviewed and updated the test cases based on the new requirements.\n' +
+            'I prioritized critical test cases that aligned with the most important features to ensure we met the new goals.\n' +
+            '\nStep 4: Communicate Regularly\n' +
+            'I actively participated in daily stand-up meetings to share updates on testing progress and any blockers caused by the requirement changes.\n' +
+            'This helped keep everyone informed and ensured we resolved issues quickly.\n' +
+            '\n4. Result\n' +
+            'By following this approach, we successfully adapted our testing strategy to the new requirements.\n' +
+            'The final product met the updated expectations, and we delivered it without significant delays.\n' +
+            'The collaboration and clear communication helped minimize disruptions and kept the team aligned.\n' +
+            '\nKey Takeaway\n' +
+            'This experience taught me the importance of flexibility and clear communication when dealing with unexpected changes. By staying organized and working closely with the team, we were able to handle the situation effectively.' },
 
 
     { header: ' feedback and criticism in your QA role', detail: 'I believe that every piece of feedback or criticism makes me stronger and helps me grow as a QA professional. Here’s how I handle it:\n' +
@@ -127,21 +182,48 @@ export const notes = [
             '\nSeek Clarification: If the feedback is not clear, I don’t hesitate to ask for more details. This helps me understand the perspective of others and ensures that I fully grasp the areas for improvement.\n' +
             '\nBy embracing feedback and using it as a tool for growth, I can continuously enhance my performance and contribute more effectively to my team.\n' },
 
-    { header: 'ensure effective communication', detail: 'Ensuring effective communication within my QA team and with other departments is essential for the success of any project. Here’s how I approach it:\n' +
-            '\nRegular Meetings: I organize regular meetings with the QA team to discuss ongoing projects, share updates, and address any issues. This could be in the form of daily stand-ups or weekly review meetings. These gatherings create a platform for team members to voice their concerns, share insights, and ensure everyone is aligned on project goals.\n' +
-            '\nClear Documentation: I emphasize the importance of clear and concise documentation. I make sure that test plans, test cases, and defect reports are well-documented and easily accessible. This helps ensure that everyone, including developers and product managers, can understand the testing process and results without confusion.\n' +
-            '\nUse of Collaboration Tools: I leverage collaboration tools like Slack and JIRA to facilitate real-time communication. These platforms allow team members to ask questions, share updates, and quickly resolve issues. I encourage the use of dedicated channels for specific projects or topics to keep discussions organized.\n' +
-            '\nCross-Department Meetings: I initiate cross-department meetings with developers, product managers, and other stakeholders. This is particularly important during the planning and review phases of a project. In these meetings, we can discuss requirements, clarify expectations, and gather feedback. I ensure that the QA perspective is included, highlighting any potential risks or testing needs.\n' +
-            '\nFeedback Loops: I promote a culture of open feedback between the QA team and other departments. After a release, I facilitate retrospectives where we can discuss what went well and what could be improved. This helps build trust and encourages continuous improvement in our processes.\n' +
-            '\nTraining and Knowledge Sharing: I encourage knowledge sharing sessions within the QA team and across departments. For instance, I might host workshops on new testing tools or methodologies. This not only enhances skills but also fosters better understanding and collaboration among teams.\n' +
-            '\nActive Listening: I practice active listening during discussions. This means paying close attention to what others are saying, asking clarifying questions, and acknowledging their points of view. This approach builds rapport and ensures that everyone feels heard and valued.\n' +
-            '\nEstablishing Clear Roles and Responsibilities: I make sure that everyone is clear on their roles and responsibilities within the project. This clarity helps reduce misunderstandings and overlaps, leading to smoother collaboration.\n' +
-            '\nBy implementing these strategies, I ensure effective communication within my QA team and with other departments, which is crucial for delivering high-quality software products.\n' +
-            '\n\n\n\n'+
-            '\nSituation: During my time at Nationwide, our testing team was responsible for verifying different file formats, many of which were very large. These files included CSV, JSON, YAML, XML, flat files, and PDF formats. Working with flat files was particularly time-consuming because testers had to go through each line to extract data from specific indexes.\n' +
-            '\nTask: My role was as an automation developer, and I needed to validate files generated by different subsystems. This involved collaborating with various teams, including billing, claims, rating, and underwriting, each of which had its own logic and requirements for the files.\n' +
-            '\nAction: To ensure effective communication and collaboration, I worked closely with different business owners to gather detailed information about their file formats and requirements. I also discussed our approach with my manager. Together, we decided to create a new test framework to automate the testing process. This framework allowed us to configure the tests using different settings in the code and control the input through CSV files. The code would automatically collect data from the database or call APIs to fetch the data and then generate the expected files. Finally, it would compare the expected files with the actual files and create a comparison report.\n' +
-            '\nResult: With this new tool, we were able to save over 90% of the time spent on testing and significantly reduce human error. This automation made our testing process much more efficient and reliable.\n'},
+    { header: 'ensure effective communication', detail: 'Effective communication within the QA team and with other departments is critical to the success of any project. Here are the key strategies I follow:\n' +
+            '\bRegular Meetings\n' +
+            'I organize regular meetings like daily stand-ups and weekly reviews to keep the QA team aligned.\n' +
+            'These meetings provide a platform for team members to share updates, discuss challenges, and ensure everyone is focused on the project goals.\n' +
+            '\n2. Clear Documentation\n' +
+            'I prioritize creating and maintaining clear, concise documentation, including test plans, test cases, and defect reports.\n' +
+            'This ensures that everyone—whether in QA, development, or product management—can easily understand and follow the testing process and results.\n' +
+            '\n3. Collaboration Tools\n' +
+            'I use tools like Slack and JIRA to facilitate real-time communication.\n' +
+            'These platforms allow the team to ask questions, share progress, and resolve issues efficiently.\n' +
+            'I encourage using dedicated channels for specific projects to keep discussions organized.\n' +
+            '\n4. Cross-Department Meetings\n' +
+            'I arrange meetings with developers, product managers, and other stakeholders during the planning and review phases.\n' +
+            'These sessions help clarify requirements, align expectations, and gather feedback.\n' +
+            'I ensure the QA perspective is represented by highlighting risks and testing needs.\n' +
+            '\n5. Feedback Loops\n' +
+            'I encourage open feedback between QA and other teams.\n' +
+            'After each release, I facilitate retrospectives to discuss what worked well and what could improve.\n' +
+            'This helps foster trust and continuous improvement.\n' +
+            '\n6. Training and Knowledge Sharing\n' +
+            'I promote knowledge-sharing sessions within QA and across teams.\n' +
+            'For example, I host workshops on new tools or methodologies, which improve skills and encourage collaboration.\n' +
+            '\n7. Active Listening\n' +
+            'During discussions, I practice active listening by focusing on what others say, asking clarifying questions, and acknowledging their input.\n' +
+            'This approach builds trust and ensures everyone feels heard and valued.\n' +
+            '\n8. Clear Roles and Responsibilities\n' +
+            'I ensure that all team members understand their roles and responsibilities in the project.\n' +
+            'This clarity helps reduce misunderstandings and overlaps, leading to smoother collaboration.\n' +
+
+
+            '\n\nPractical Example of Effective Communication in Action\n' +
+            '\nSituation: At Nationwide, our QA team had to validate files in various formats, including CSV, JSON, YAML, XML, flat files, and PDFs. Flat files were especially time-consuming because testers had to manually extract data from specific indexes.\n' +
+            '\nTask: As an automation developer, my role was to validate files generated by different subsystems. This required collaboration with teams from billing, claims, rating, and underwriting—each with unique file logic and requirements.\n' +
+            '\nAction:\n' +
+            'I worked closely with business owners to gather detailed information about their file requirements.\n' +
+            'I collaborated with the team to design a new testing framework for automating the validation process.\n' +
+            'This framework used configurable settings and CSV files to control inputs, automatically fetched data from databases or APIs, generated expected files, and compared them with actual files to create a detailed report.\n' +
+            '\nResult:\n' +
+            'The new tool reduced testing time by over 90% and significantly minimized human error.\n' +
+            'This automation made our testing process much more efficient and reliable, saving time and improving accuracy.\n' +
+            '\n\nKey Takeaway\n' +
+            'By combining effective communication strategies with strong collaboration, clear documentation, and automation, I’ve successfully improved team efficiency and project outcomes.'},
 
 
 
@@ -156,6 +238,12 @@ export const notes = [
             '\nPrioritize Test Cases: I prioritize test cases based on risk and impact. This means focusing on critical functionalities first, ensuring that the most important features are tested thoroughly before moving on to less critical areas.\n' +
             '\nContinuous Improvement: After each testing cycle, I review the effectiveness of the test cases and gather insights from the outcomes. I analyze any defects found and adjust the test cases accordingly for future iterations. This continuous improvement mindset helps enhance the quality of the test cases over time.\n' +
             '\nBy following this structured approach to test case design, I can ensure comprehensive coverage, improve collaboration with my team, and ultimately contribute to delivering high-quality software products.\n' },
+
+    {header: 'differences between manual testing and automated testing', detail: '**Manual testing** involves a human tester interacting with a software application to identify defects. It\'s like a real user going through the application and checking if it behaves as expected. It\'s flexible, allowing for exploratory testing and ad-hoc checks. However, it\'s time-consuming, prone to human error, and doesn\'t scale well for repetitive test cases.\n' +
+            '\n' +
+            '**Automated testing**, on the other hand, uses software tools and scripts to execute test cases. This method is faster, more reliable, and can handle repetitive tasks efficiently. It\'s ideal for regression testing and large test suites. However, it requires initial setup time, technical expertise, and might not be suitable for all test scenarios, especially those requiring human judgment or intuition.\n' +
+            '\n' +
+            'In essence, manual testing is about human interaction and exploration, while automated testing is about efficiency, repeatability, and coverage for specific test cases. Both have their strengths and weaknesses, and often, they complement each other in a well-rounded testing strategy. \n'},
     { header: 'Common QA challenge', detail: 'Unclear Requirements, Problem: It’s hard to test when the project details are not clear.\n' +
             'Solution: Talk with the team to make sure everyone understands the requirements. Write everything down to avoid confusion.' +
 
@@ -174,13 +262,6 @@ export const notes = [
             '\nHard to Manage Test Automation: It’s tricky to pick the right tools or keep automated tests working.\n' +
             'Solution: Start small, automate important tests, and use good tools with trained testers.\n' +
 
-            '\nToo Many Regression Tests: Old tests take too long to run after changes are made.\n' +
-            'Solution: Automate regression tests and remove tests that are no longer needed.\n' +
-
-            '\nIntegration Problems: It’s hard to test if all parts of the system work together.\n' +
-            'Solution: Test APIs (how parts talk to each other) and use virtual services for parts not ready yet.\n' +
-            '\nKeeping Up with New Tech: Technology changes fast, and it’s hard to learn everything.\n' +
-            'Solution: Attend training, read blogs, and watch tutorials to stay updated.\n' +
             '\nBugs in Production: Some bugs still show up after release.\n' +
             'Solution: Focus on testing critical parts, test often, and do a final test before release.\n' +
             '\nManual vs. Automated Testing: Choosing when to use manual testing or automation is difficult.\n' +
@@ -251,6 +332,14 @@ export const notes = [
           'Stay organized and write detailed test cases.\n' +
           'Always communicate clearly with your team.\n' +
           'Test like a real user: think of different ways people might use the app.\n' },
+
+    {header: 'benefits of automation testing', detail: '* **Increased speed:** Automated tests execute much faster than manual tests, leading to quicker feedback cycles and faster time-to-market.\n' +
+            '* **Improved accuracy:** Automation eliminates human error, resulting in more reliable test results.\n' +
+            '* **Enhanced test coverage:** Automated tests can cover a broader range of test cases, including complex and repetitive scenarios.\n' +
+            '* **Cost-effectiveness:** While there\'s an initial investment in setting up automation, it saves time and resources in the long run.\n' +
+            '* **Improved test repeatability:** Automated tests can be executed consistently, ensuring that the same test conditions are applied each time.\n' +
+            '* **Better resource allocation:** Automation frees up human testers to focus on exploratory and complex testing scenarios.\n' +
+            '* **Early bug detection:** Automated tests can identify defects early in the development process, reducing costs and improving overall quality.\n'},
 
     { header: 'Common Issue in Automation Testing', detail: 'Test Script Maintenance: Automated test scripts break when the application changes.\n' +
           'Example: A button’s ID changes, and the test can’t find it.\n' +
@@ -404,7 +493,116 @@ export const notes = [
             'Use Logs: Logging is your best friend! Add helpful logs to trace what’s happening in the app.\n' +
             'Ask for Help if Needed: If you’re stuck, ask a teammate or check online forums like Stack Overflow.' },
 
-    { header: 'Header', detail: 'Detail' },
+    { header: 'Nationwide File validation', detail: '\n\nPractical Example of Effective Communication in Action\n' +
+            '\nSituation: At Nationwide, our QA team had to validate files in various formats, including CSV, JSON, YAML, XML, flat files, and PDFs. Flat files were especially time-consuming because testers had to manually extract data from specific indexes.\n' +
+            '\nTask: As an automation developer, my role was to validate files generated by different subsystems. This required collaboration with teams from billing, claims, rating, and underwriting—each with unique file logic and requirements.\n' +
+            '\nAction:\n' +
+            'I worked closely with business owners to gather detailed information about their file requirements.\n' +
+            'I collaborated with the team to design a new testing framework for automating the validation process.\n' +
+            'This framework used configurable settings and CSV files to control inputs, automatically fetched data from databases or APIs, generated expected files, and compared them with actual files to create a detailed report.\n' +
+            '\nResult:\n' +
+            'The new tool reduced testing time by over 90% and significantly minimized human error.\n' +
+            'This automation made our testing process much more efficient and reliable, saving time and improving accuracy.\n' +
+            '\n\nKey Takeaway\n' +
+            'By combining effective communication strategies with strong collaboration, clear documentation, and automation, I’ve successfully improved team efficiency and project outcomes.'},
+
+    { header: 'Pixel Script', detail: '1. Situation\n' +
+            'When I joined Planet Howl, the QA team was manually testing checkout processes for active merchants based on revenue. This process, conducted monthly and quarterly, was repetitive and time-consuming.\n' +
+            'Additionally, I observed that 5%-10% of product support tickets were related to configuration issues caused by changes on merchant sites.\n' +
+
+            '\n2. Task\n' +
+            'My goal was to find a way to automate the testing process to:\n' +
+            'Reduce manual workload.\n' +
+            'Quickly identify configuration issues without requiring actual checkouts or handling real credit cards.\n' +
+            'Proactively address issues to improve customer satisfaction.\n' +
+            '\n3. Action\n' +
+            'I proposed an automated solution and drafted a Notion document explaining my approach. After discussing it with my manager, I requested a week to develop the solution.\n' +
+            'Using Selenium, I created a script with the following steps:\n' +
+            'Access each product URL and wait for a few seconds to load the page.\n' +
+            'Capture and read the network requests to verify if the page impression was present in the network.\n' +
+            'Dump all impression details into a CSV file.\n' +
+            'Use the CSV data to generate database queries based on timestamp, merchant ID, creator ID, and product ID.\n' +
+            'Validate the data in the database and set the status column to either "Pass" or "Fail" to indicate whether the merchant’s tag was functioning correctly.\n' +
+            'For failed cases, I created JIRA bug tickets and shared them with the CSM team.\n' +
+            '\n4. Result\n' +
+            'The automated script efficiently identified merchants with tag issues, significantly reducing the need for manual testing.\n' +
+            'The proactive approach allowed the CSM team to address issues before customers noticed them, improving customer satisfaction.\n' +
+            'This solution saved time, reduced human error, and streamlined the QA and CSM workflows.' },
+    { header: 'Team Change', detail: 'Managing a Smooth Team Change During a Reorganization\n' +
+            '\n1. Situation\n' +
+            'Due to a company reorganization, I was transitioned from the publisher support team to the merchant team. The publisher support team focused on activities like managing publisher tags, reports, and monitoring tag health. At the time, the team was working on a new feature to track link interactions on publisher websites, including user scrolls, views, and hovers over links.\n' +
+            '\n2. Task\n' +
+            'As the only QA on the project, my task was to ensure a smooth transition of the project to a new QA team member. This involved transferring all knowledge and responsibilities so the project could continue seamlessly and meet its deadlines.\n' +
+            'Documentation:\n' +
+            'I created detailed documents covering all aspects of the project, including test cases, test results, and ongoing tasks.\n' +
+            'These documents served as a complete reference for the new team member.\n' +
+            'Knowledge Transfer (KT) Sessions:\n' +
+            'I hosted daily KT meetings to walk the new team member through the project, addressing their questions and concerns in real time.\n' +
+            '\nCollaboration and Support:\n' +
+            'I participated in stand-up meetings every other day with the broader team to identify and resolve potential issues during the transition.\n' +
+            'This ensured alignment between QA and development teams.\n' +
+            '\nAvailability for Follow-Up:\n' +
+            'I made myself available for any follow-up questions or guidance, ensuring the new QA team member felt supported throughout the transition process.\n' +
+            '\n4. Result\n' +
+            'The new team member successfully took over the project without interruptions or delays.\n' +
+            'The feature was delivered on time, and integration tests were completed across all active publishers.\n' +
+            'The transition process was smooth, and the new feature was implemented effectively.\n' +
+            '\n\nKey Takeaway\n' +
+            'This experience taught me the importance of clear documentation, effective knowledge transfer, and ongoing support during team transitions. These practices ensured continuity and contributed to the project’s success.' },
+    { header: 'Pixel Debug', detail: 'I remember a tricky issue during an Ulta Beauty campaign that required careful investigation. On the first day, I noticed the order transition data was lower than expected, which seemed strange.\n' +
+            '\nConfirmed the campaign date on the calendar\n' +
+            '\nLoad the product link to confirm the tracking tag is able to load up on the product page\n' +
+            '\nVerify the order transition on the event table to confirm the tracking tag is working\n' +
+            '\nAfter above step i notice the tacking tag is working as expected, then i suspect some product might not trigger the checkout api call\n' +
+            '\nThen I reach out to the CSM team to get all the campaign products and double check them on the event table by grouping the product by name with the transition count in the past date, and i still don\'t have any idea, the result looks fine\n' +
+            '\nAnd after some back and forth data checking i suspect it might relate to the platform, then i modify the SQL to group by platform and browser, and i notice on IOS with Safari browser data was a lot lower than expected\n' +
+            '\nAnd i start to do the manual checkout on ios and safari, and i see there is not checkout api call after at all\n' +
+            '\nRoot Cause: After identifying the problem, I scheduled a meeting with both our team and the Ulta team. I also created a JIRA ticket with all the details, including steps to reproduce, product links, platforms, browsers, order details, and browser network call.\n' +
+            '\nResolution: During the meeting, the Ulta team confirmed a configuration issue on their end for iOS Safari because they had some other bug related to IOS and Safari. And they fixed it, I retested on all platforms and browsers to confirm the tracking tag was working.\n' +
+            '\n\nDocumenting for the Future:\n' +
+            'I created a guide to help in case a similar bug happens again. It includes:\n' +
+            'Steps to confirm campaign details\n' +
+            'End-to-end testing procedures\n' +
+            'SQL queries for grouping data by platform and browser\n' +
+            'How to gather data for JIRA tickets\n' +
+            'Tips for collaborating with external teams\n' +
+            '\nBy following these steps and working closely with the team, we fixed the issue efficiently.\n' },
+    { header: 'STLC', detail: 'Requirement Analysis\n' +
+            'Test Planning\n' +
+            'Test Case Development\n' +
+            'Test Environment Setup\n' +
+            'Test Execution\n' +
+            'Test Cycle Closure\n' },
+    { header: 'SDLC', detail: 'Planning\n' +
+            'Analysis\n' +
+            'Design\n' +
+            'Implementation (Coding)\n' +
+            'Testing\n' +
+            'Deployment\n' +
+            'Maintenance and Support\n' },
+    { header: 'Smoke vs Regression', detail: 'Smoke tests to check if the basic functions work.\n' +
+            'Regression tests to ensure new changes don’t break existing features.\n'},
+    { header: 'http method and status code', detail: 'Informational responses (100 – 199) \n' +
+            'Successful responses (200 – 299) \n' +
+            'Redirection messages (300 – 399) \n' +
+            'Client error responses (400 – 499) \n' +
+            'Server error responses (500 – 599)\n'+
+
+            '\nGet: get/retrive information from resource - get user information\n' +
+            'Post: insert information into resource - create new user (name, address, age, etc)\n' +
+            'Put: update data from existing by providing new data (udpate user with new data)\n' +
+            'Patch: only update specific field (udpate user name)\n'},
+    { header: 'wait', detail: '### 1. **Explicit Waits:**\n' +
+            '* Employing `WebDriverWait` or similar mechanisms to wait for specific conditions before interacting with the element.\n' +
+            '* Useful for elements that appear after certain actions or delays.\n' +
+            '* Example: Waiting for an element to be clickable or visible before clicking it.\n' +
+            '\n' +
+            '### 2. **Implicit Waits:**\n' +
+            '* Setting a global timeout for all find element operations.\n' +
+            '* Less preferred than explicit waits as it can lead to unnecessary delays.\n' +
+            '\n' +
+            '### 3. **Fluent Waits:**\n' +
+            '* Combining explicit and implicit waits for more flexible control.\n' },
     { header: 'Header', detail: 'Detail' },
     { header: 'Header', detail: 'Detail' },
 
