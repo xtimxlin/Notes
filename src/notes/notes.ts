@@ -156,11 +156,79 @@ export const notes = [
             '\nPrioritize Test Cases: I prioritize test cases based on risk and impact. This means focusing on critical functionalities first, ensuring that the most important features are tested thoroughly before moving on to less critical areas.\n' +
             '\nContinuous Improvement: After each testing cycle, I review the effectiveness of the test cases and gather insights from the outcomes. I analyze any defects found and adjust the test cases accordingly for future iterations. This continuous improvement mindset helps enhance the quality of the test cases over time.\n' +
             '\nBy following this structured approach to test case design, I can ensure comprehensive coverage, improve collaboration with my team, and ultimately contribute to delivering high-quality software products.\n' },
+    { header: 'Common QA challenge', detail: 'Unclear Requirements, Problem: It’s hard to test when the project details are not clear.\n' +
+            'Solution: Talk with the team to make sure everyone understands the requirements. Write everything down to avoid confusion.' +
+
+            '\n\nPoor Communication: Team members don’t share information clearly, causing delays or mistakes.\n' +
+            'Solution: Use chat tools like Slack or Jira and have regular team meetings to stay updated.'+
+
+            '\n\nTight Deadlines: and there’s not enough time to test everything.\n' +
+            'Test the most important parts first. Use tools to automate repeated tests to save time' +
+
+            '\n\nNo Test Data: don’t have enough or the right data to test.\n'+
+            'Create fake data or copy safe data from the real system to use for testing'+
+
+            '\n\nThe testing system doesn’t work properly\n'+
+            'Use tools like Docker to create stable systems. Work with the DevOps team to fix problems quickly\n'+
+
+            '\nHard to Manage Test Automation: It’s tricky to pick the right tools or keep automated tests working.\n' +
+            'Solution: Start small, automate important tests, and use good tools with trained testers.\n' +
+
+            '\nToo Many Regression Tests: Old tests take too long to run after changes are made.\n' +
+            'Solution: Automate regression tests and remove tests that are no longer needed.\n' +
+
+            '\nIntegration Problems: It’s hard to test if all parts of the system work together.\n' +
+            'Solution: Test APIs (how parts talk to each other) and use virtual services for parts not ready yet.\n' +
+            '\nKeeping Up with New Tech: Technology changes fast, and it’s hard to learn everything.\n' +
+            'Solution: Attend training, read blogs, and watch tutorials to stay updated.\n' +
+            '\nBugs in Production: Some bugs still show up after release.\n' +
+            'Solution: Focus on testing critical parts, test often, and do a final test before release.\n' +
+            '\nManual vs. Automated Testing: Choosing when to use manual testing or automation is difficult.\n' +
+            'Solution: Use manual testing for creative work and automation for repeated tasks.\n' +
+            '\nNot Enough Resources: There aren’t enough testers, tools, or money.\n' +
+            'Solution: Use free tools and train team members to share the work.\n' +
+            '\nTest Coverage vs. Time: Testing everything takes too much time.\n' +
+            'Solution: Focus on testing the most important and risky parts first.\n'
+    },
+
+    { header: 'Header', detail: 'Detail' },
+
+
+
+    { header: 'how to debug the bug', detail: 'Step 1: Understand the Bug\n' +
+            '--> Reproduce the bug by following the same steps as the user or tester.\n' +
+            '--> Read any error messages or logs to understand what went wrong.\n' +
+            '--> Note the inputs, actions, and environment where the bug occurred (e.g., browser, OS).\n' +
+            'Tip: Use screenshots or videos to document the issue.\n' +
+            '\nStep 2: Investigate the Cause\n' +
+            '--> Check the code or workflow for the part of the application where the bug occurs.\n' +
+            '--> Use debugging tools to step through the code and monitor its behavior.\n' +
+            '--> Analyze related logs (application, server, or database logs) for errors or warnings.\n' +
+            '--> Review recent changes to the code or configuration that might have introduced the bug.\n' +
+            'Tools:\n' +
+            '--> Browser Developer Tools: For web debugging (Inspect element, Console).\n' +
+            '--> IDE Debuggers: Debug features in tools like Visual Studio, IntelliJ, or PyCharm.\n' +
+            '\nStep 3: Fix the Bug\n' +
+            '--> Identify the root cause and update the code or configuration to fix the issue.\n' +
+            '--> Use small, clear changes to avoid introducing new bugs.\n' +
+            'Example: If the bug is caused by incorrect logic, rewrite the logic with the correct conditions.\n' +
+            '\nStep 4: Test the Fix\n' +
+            '--> Reproduce the original steps to ensure the bug is gone.\n' +
+            '--> Run regression tests to make sure the fix doesn’t break other parts of the system.\n' +
+            'Tip: Test in different environments (e.g., different browsers, devices) if the bug might be environment-specific.\n' +
+            '\n\nStep 5: Analyze and Learn\n' +
+            '--> Look for ways to prevent similar bugs in the future, like adding validation or more tests.\n' +
+            '--> Share your findings with the team to improve the codebase or processes.\n' +
+            'Example: Add unit tests to catch similar issues early.\n' +
+            '\n\nBest Practices for Debugging\n' +
+            'Stay Calm and Focused: Debugging can be frustrating, but working step by step helps solve issues faster.\n' +
+            'Isolate the Issue: Break down the problem and check one thing at a time.\n' +
+            'Use Logs: Logging is your best friend! Add helpful logs to trace what’s happening in the app.\n' +
+            'Ask for Help if Needed: If you’re stuck, ask a teammate or check online forums like Stack Overflow.' },
     { header: 'Header', detail: 'Detail' },
     { header: 'Header', detail: 'Detail' },
-
-
-
+    { header: 'Header', detail: 'Detail' },
+    { header: 'Header', detail: 'Detail' },
 
     { header: '算法面试注意事项', detail: '上来不要直接去做题!!!一定要问清楚题目要求!!!\n' +
             'Ask question to clearify any unsure question\n' +
